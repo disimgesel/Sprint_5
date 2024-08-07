@@ -15,7 +15,7 @@ class TestKonstruktor:
         display_bun = driver.find_element(*Locator.INGREDIENT_IN_BUN)
         active_bun = driver.find_element(*Locator.ACTIVE_BUN).get_attribute("class")
         assert display_bun.is_displayed()
-        assert active_bun == Data.ACTIVE_BUTTON
+        assert active_bun == Locator.ACTIVE_BUTTON
 
     def test_to_sauce_from_filling(self, driver):
         driver.find_element(*Locator.FILLING_IN_KONSTRUKTOR).click()
@@ -25,7 +25,7 @@ class TestKonstruktor:
         display_sauce = driver.find_element(*Locator.INGREDIENT_IN_SAUCE)
         active_sauce = driver.find_element(*Locator.ACTIVE_SAUCE).get_attribute("class")
         assert display_sauce.is_displayed()
-        assert active_sauce == Data.ACTIVE_BUTTON
+        assert active_sauce == Locator.ACTIVE_BUTTON
 
     def test_to_filling_from_sauce(self, driver):
         driver.find_element(*Locator.SAUCE_IN_KONSTRUKTOR).click()
@@ -35,4 +35,4 @@ class TestKonstruktor:
         display_filling = driver.find_element(*Locator.INGREDIENT_IN_FILLING)
         active_filling = driver.find_element(*Locator.ACTIVE_FILLING).get_attribute("class")
         assert display_filling.is_displayed()
-        assert active_filling == Data.ACTIVE_BUTTON
+        assert active_filling == Locator.ACTIVE_BUTTON

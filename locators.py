@@ -15,7 +15,7 @@ class Locator:
     LINK_TO_PERSONAL_AREA = (By.XPATH, ".//p[text() = 'Личный Кабинет']") # Гиперссылка "Личный кабинет"
     LOGIN_IN_PERSONAL_AREA = (By.XPATH, ".//label[text() = 'Логин']/parent::*/input") # Поле "Логин" в личном кабинете
     MESSAGE_PASSWORD = (By.XPATH, ".//p[@class='input__error text_type_main-default']") # Сообщение о не валидном пароле
-    LOGIN_IN_REGISTRATION = (By.XPATH, ".//a[@class = 'Auth_link__1fOlj']") # Гиперссылка "Войти" в форме регистрации
+    LOGIN_IN_REGISTRATION = (By.XPATH, ".//a[text() = 'Войти']") # Гиперссылка "Войти" в форме регистрации
     RECOVERY_PASSWORD = (By.XPATH, ".//a[text() = 'Восстановить пароль']") # Гиперссылка "Восстановить пароль"
     LOGIN_RECOVERY_PASSWORD = (By.XPATH, ".//a[text() = 'Войти']") # Гиперссылка "Войти" на странице восстановления пароля
     LINK_KONSTRUKTOR = (By.XPATH, ".//p[text() = 'Конструктор']") # Раздел конструктор
@@ -30,3 +30,4 @@ class Locator:
     ACTIVE_SAUCE = (By.XPATH, ".//span[text() = 'Соусы']/parent::*")  # Активная кнопка "Соусы"
     ACTIVE_FILLING = (By.XPATH, ".//span[text() = 'Начинки']/parent::*")  # Активная кнопка "Начинки"
     LOGO_STELLAR_BURGERS = (By.XPATH, ".//div[@class='AppHeader_header__logo__2D0X2']/child::*") # Логитип Stellar Burgers
+    ACTIVE_BUTTON = "tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect" # Проверка на активность вкладки конструктора
